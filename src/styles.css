@@ -26,7 +26,7 @@ main {
   width: 100%;
 }
 .sidebar {
-  background-image: url("images/bg-sidebar-mobile.svg");
+  background-image: url("../images/bg-sidebar-mobile.svg");
   height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -507,7 +507,7 @@ form input::placeholder {
     align-self: stretch;
     padding: 2.7em 30px;
     border-radius: 10px;
-    background-image: url("images/bg-sidebar-desktop.svg");
+    background-image: url("../images/bg-sidebar-desktop.svg");
     background-size: cover;
   }
   .side-nav {
