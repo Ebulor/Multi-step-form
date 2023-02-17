@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multi-step form</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="sidebar">
+        <div class="side-nav">
+          <button class="side-nav-btn active-btn">1</button>
+          <p><span>STEP 1</span>YOUR INFO</p>
+        </div>
+        <div class="side-nav">
+          <button class="side-nav-btn">2</button>
+          <p><span>STEP 2</span>SELECT PLAN</p>
+        </div>
+        <div class="side-nav">
+          <button class="side-nav-btn">3</button>
+          <p><span>STEP 3</span>ADD-ONS</p>
+        </div>
+        <div class="side-nav">
+          <button class="side-nav-btn">4</button>
+          <p><span>STEP 4</span>SUMMARY</p>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="content personal-info active-tab">
+          <div class="heading">
+            <h1>Personal info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
+          </div>
+          <form action="#">
+            <label for=""
+              >Name
+              <span class="error-msg">This field is required</span>
+              <input
+                type="text"
+                name=""
+                id="name"
+                placeholder="e.g. Stephen King"
+              />
+              <span class="error-msg">This field is required</span>
+            </label>
+            <label for=""
+              >Email Address
+              <span class="error-msg">This field is required</span>
+
+              <input
+                type="text"
+                name=""
+                id="email"
+                placeholder="e.g. stephenking@lorem.com"
+              />
+            </label>
+            <label for=""
+              >Phone Number
+              <span class="error-msg">This field is required</span>
+              <input
+                type="text"
+                name=""
+                id="phoneNumber"
+                placeholder="e.g. +1 234 567 890"
+              />
+            </label>
+          </form>
+        </div>
+        <div class="content select-plan">
+          <div class="heading">
+            <h1>Select your plan</h1>
+            <p>You have the option of monthly or yearly billing.</p>
+          </div>
+          <div class="plans">
+            <div class="plan arcade active-plan">
+              <div class="plan-icon">
+                <img src="images/icon-arcade.svg" alt="" />
+              </div>
+              <div class="plan-type">
+                <p class="plan-name">Arcade</p>
+                <p class="plan-price active-duration">$9/mo</p>
+                <p class="plan-price">$90/yr</p>
+                <span class="bonus">2 months free</span>
+              </div>
+            </div>
+            <div class="plan advanced">
+              <div class="plan-icon">
+                <img src="images/icon-advanced.svg" alt="" />
+              </div>
+              <div class="plan-type">
+                <p class="plan-name">Advanced</p>
+                <p class="plan-price active-duration">$12/mo</p>
+                <p class="plan-price">$120/yr</p>
+                <span class="bonus">2 months free</span>
+              </div>
+            </div>
+            <div class="plan pro">
+              <div class="plan-icon">
+                <img src="images/icon-pro.svg" alt="" />
+              </div>
+              <div class="plan-type">
+                <p class="plan-name">Pro</p>
+                <p class="plan-price active-duration">$15/mo</p>
+                <p class="plan-price">$150/yr</p>
+                <span class="bonus">2 months free</span>
+              </div>
+            </div>
+          </div>
+          <div class="toggle-price">
+            <label class="toggle">
+              <span class="month checked-price">Monthly</span>
+              <input class="check" type="checkbox" />
+              <span class="slider"></span>
+              <span class="year">Yearly</span>
+            </label>
+          </div>
+        </div>
+        <div class="content pick-add-ons">
+          <div class="heading">
+            <h1>Pick add-ons</h1>
+            <p>Add-ons help enhance your gaming experience.</p>
+          </div>
+          <div class="add-ons">
+            <div class="add-on">
+              <label class="check-container">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="add-on-type">
+                <h4>Online service</h4>
+                <p>Access to multiplayer games</p>
+              </div>
+              <div class="add-on-prices">
+                <p class="add-on-price add-on-duration">+$1/mo</p>
+                <p class="add-on-price">+$10/yr</p>
+              </div>
+            </div>
+            <div class="add-on">
+              <label class="check-container">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="add-on-type">
+                <h4>Larger storage</h4>
+                <p>Extra 1TB of cloud save</p>
+              </div>
+              <div class="add-on-prices">
+                <p class="add-on-price add-on-duration">+$2/mo</p>
+                <p class="add-on-price">+$20/yr</p>
+              </div>
+            </div>
+            <div class="add-on">
+              <label class="check-container">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="add-on-type">
+                <h4>Customizable Profile</h4>
+                <p>Custom theme on your profile</p>
+              </div>
+              <div class="add-on-prices">
+                <p class="add-on-price add-on-duration">+$2/mo</p>
+                <p class="add-on-price">+$20/yr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content summary">
+          <div class="heading">
+            <h1>Finishing up</h1>
+            <p>Double-check everything looks OK before confirming.</p>
+          </div>
+          <div class="services">
+            <div class="service-plan">
+              <div class="chosen-plan"></div>
+              <div class="service-add-ons"></div>
+            </div>
+          </div>
+          <div class="total">
+            <p class="total-text">Total <span>(per month)</span></p>
+            <div class="total-price">
+              <span>+$</span>
+              <p>12</p>
+              <span class="total-duration">/mo</span>
+            </div>
+          </div>
+        </div>
+        <div class="success-wrapper">
+          <img src="images/icon-thank-you.svg" alt="" />
+          <h1>Thank you!</h1>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </div>
+        <div class="page-btns">
+          <button class="prev-option" style="display: none;">Go Back</button>
+          <button class="next-option">Next Step</button>
+          <button class="confirm-btn" style="display: none;">Confirm</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="src/index.js"></script>
+    <script src="src/toggleDuration.js"></script>
+  </body>
+</html>
