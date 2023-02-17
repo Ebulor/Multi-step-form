@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Multi-step form</title>
     <meta charset="UTF-8" />
@@ -38,34 +38,33 @@
             <p>Please provide your name, email address, and phone number.</p>
           </div>
           <form action="#">
-            <label for=""
+            <label for="name"
               >Name
               <span class="error-msg">This field is required</span>
               <input
                 type="text"
-                name=""
+                name="name"
                 id="name"
                 placeholder="e.g. Stephen King"
               />
               <span class="error-msg">This field is required</span>
             </label>
-            <label for=""
+            <label for="email"
               >Email Address
               <span class="error-msg">This field is required</span>
-
               <input
                 type="text"
-                name=""
+                name="email"
                 id="email"
                 placeholder="e.g. stephenking@lorem.com"
               />
             </label>
-            <label for=""
+            <label for="phoneNumber"
               >Phone Number
               <span class="error-msg">This field is required</span>
               <input
                 type="text"
-                name=""
+                name="phoneNumber"
                 id="phoneNumber"
                 placeholder="e.g. +1 234 567 890"
               />
@@ -80,7 +79,10 @@
           <div class="plans">
             <div class="plan arcade active-plan">
               <div class="plan-icon">
-                <img src="images/icon-arcade.svg" alt="" />
+                <img
+                  src="images/icon-arcade.svg"
+                  alt="a joystick icon in a circle with an orange background "
+                />
               </div>
               <div class="plan-type">
                 <p class="plan-name">Arcade</p>
@@ -91,7 +93,10 @@
             </div>
             <div class="plan advanced">
               <div class="plan-icon">
-                <img src="images/icon-advanced.svg" alt="" />
+                <img
+                  src="images/icon-advanced.svg"
+                  alt="a game controller console icon in a circle with a pink background "
+                />
               </div>
               <div class="plan-type">
                 <p class="plan-name">Advanced</p>
@@ -102,7 +107,10 @@
             </div>
             <div class="plan pro">
               <div class="plan-icon">
-                <img src="images/icon-pro.svg" alt="" />
+                <img
+                  src="images/icon-pro.svg"
+                  alt="a game controller console icon in a circle with a blue background "
+                />
               </div>
               <div class="plan-type">
                 <p class="plan-name">Pro</p>
@@ -192,7 +200,7 @@
           </div>
         </div>
         <div class="success-wrapper">
-          <img src="images/icon-thank-you.svg" alt="" />
+          <img src="images/icon-thank-you.svg" alt="a check sign icon" />
           <h1>Thank you!</h1>
           <p>
             Thanks for confirming your subscription! We hope you have fun using
